@@ -42,7 +42,8 @@ function showSlides(n) {
 
 
 
-/* First attempt at Tab Gallery
+/* First attempt at Tab Gallery 
+
 function myFunction(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
