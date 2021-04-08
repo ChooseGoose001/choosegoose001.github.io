@@ -7,7 +7,8 @@ h3, p {
     padding-left: 3rem; 
     padding-right: 1rem; 
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left; 
+    
+    
 }
 
 
@@ -91,27 +92,101 @@ a:hover:after {
 
 }
 */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 1em 1em;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {
+      margin-left: 7.8em;
+      margin-right: 7.8em;
+    }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: left;
+    background-color: #f1f1f1;
+    
+  }
+  
+.card-image {
+    width: 40%; 
+    float: left; 
+    padding-right: 2em;
+    
+}
 
-.container{
+.card-image1 {
+    width: 50%; 
+    float: left; 
+    padding-right: 2em; 
+    padding-bottom: 2em; 
+    
+}
+
+.card-image2 {
+    width: 45%;
+    float: left;
+    padding-right: 2em; 
+}
+
+.card-image3 {
+    width: 50%; 
+    float: left;
+    padding-right: 2em; 
+}
+  
+  /* Responsive columns - one column layout (vertical) on small screens */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  
+/* .container{
     display: flex;
     align-items: flex-start;
   }
   
   #outerElement{
     background-color: white;  
-    /*justify-content: center;  Centers children */
+    /*justify-content: center;  Centers children 
     margin-left: 7.8rem;
     margin-right: 7.8rem;
     height: 65%;
   }
 
   #inner-lhs.container{
-    width: 44%; /* What portion of the screen should the left hand side panel take up? */
+    width: 44%; /* What portion of the screen should the left hand side panel take up? 
      
 }
   
   #inner-rhs.container{
-    width: 44%; /* What portion of the screen should the right hand side panel take up? */
+    width: 44%; /* What portion of the screen should the right hand side panel take up? 
   }
 
  .column-rhs {
@@ -125,15 +200,17 @@ a:hover:after {
  }
   
   #gap-vertical {
-    width: 5%; /* How big in the gap in the center */
-    height: 100%; 
-    
-    
+    width: 5%; /* How big in the gap in the center 
+    height: auto; 
+   
   }
 
   #gap-horizontal {
       height: 5%;
       width: 100%; 
+      
+      
+
   }
   
   .column-lhs{
@@ -146,7 +223,7 @@ footer {
     background-color: #cccc99;
     padding-top: 3rem; 
     text-align: center;
-}
+} */
 
 
 
