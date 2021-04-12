@@ -1,3 +1,8 @@
+html {
+  font-size: 100%; /*accessibility*/
+}
+
+
 .flex-container {
     display: flex; 
     flex-flow: row wrap;
@@ -41,7 +46,9 @@ h3, p {
 
 }
 
-
+.module {
+  cursor: url(assets/images/pencil-transparent.png), auto;
+}
 
 .nav {
     list-style: none;
@@ -96,11 +103,19 @@ h3, p {
 
 
   
-  
   body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0; 
   }
   
+  .contact-main {
+    background-image: url(assets/images/map-red.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    background-color: #999999;
+  }
+
   /* Float four columns side by side */
   .column {
     float: left;
@@ -160,6 +175,7 @@ h3, p {
 
 #card-about {
     margin-top: 2em; 
+    margin-right: 2em; 
 }
 
 #luci-image {
@@ -184,6 +200,26 @@ h3, p {
       flex-direction: row wrap;
       margin-bottom: 20px;
     }
+    .header {
+      display: none; 
+    }
+    .nav {
+      display: none;
+    }
+
+    .dots {
+      display: none; 
+    }
+    
+  }
+
+  @media screen and (min-width: 601px) {
+    .mobile-menu {
+      display:none; 
+    }
+    .main-menu {
+      display: none; 
+    }
   }
 
   @media screen and (min-width: 1400px) {
@@ -198,12 +234,136 @@ h3, p {
     .card2 {
         margin-top: -2em;  
     }
+    .dots {
+        max-width: 1000px;
+    }
   }
   @media screen and (min-width: 1900px) {
     .card  {
       min-height: 500px;
+       
     }
+    .card2 {
+        margin-top: -2em;  
+    }
+    
   }
 
+/* Hamburger menu styling */
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 
+.menu-toggle {
+  display: inline-block;
+  padding: .75em 15px; 
+  line-height: 1em;
+  font-size: 1em;
+  color: #666666;
+}
+
+.menu-toggle:hover {
+  color:rgb(15, 15, 15);
+}
+
+.main-menu {
+  position: absolute;
+  display: none;
+  left: -200px;
+  top: 0;
+  height: 100%; 
+  /* overflow-y: scroll;*/
+  overflow-x: visible;
+  transition: left 0.3s ease, box-shadow 0.3s ease;
+  z-index: 999; 
+}
+
+.main-menu ul {
+  list-style: none;
+  margin: 0; 
+  padding: 2.5em 0 0; 
+  /* Hide shadow w/ -8px while 'closed' */
+  -webkit-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+  -moz-box-shadow: -8px 0 8px rgba(0,0,0,.5);
+       box-shadow: -8px 0 8px rgba(0,0,0,.5);    
+  min-height: 100%;
+  width: 200px; 
+  background:rgb(255, 255, 255);
+}
+
+.main-menu a {
+  display: block;
+  padding: 0.75em 15px;
+  line-height: 1em;
+  font-size: 1em;
+  color: #666666;
+  text-decoration: none;
+  
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  background:rgb(255, 255, 255);
+  /*text-decoration: underline;*/
+}
+
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-menu:target,
+.main-menu[aria-expanded="true"]{
+  display: block;
+  left: 0; 
+  outline: none;
+  -moz-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  -webkit-box-shadow: 3px 0 12px rgba(0,0,0,.25);
+  box-shadow: 3px 0 12px rgba(0,0,0,.25); 
+
+}
+
+.main-menu:target .menu-close,
+.main-menu[aria-expanded="true"] .menu-close {
+  z-index: 1001;
+}
+
+.main-menu:target ul,
+.main-menu[aria-expanded="true"] ul {
+  position: relative;
+  z-index: 1000;
+}
+
+.main-menu:target + .backdrop,
+.main-menu[aria-expanded="true"] + .backdrop {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  /*
+  background: #000;
+  background: rgba(0,0,0,.85);
+  */
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop,
+  .main-menu[aria-expanded="true"] + .backdrop {
+    position: fixed; 
+  }
+}
 
