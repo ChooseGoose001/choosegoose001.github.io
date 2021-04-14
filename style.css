@@ -53,6 +53,19 @@ h2, h3, p {
 
 }
 
+.mobile-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile-header img {
+  height: 3em;
+  padding-top: 15px; 
+  
+}
+
+
+
 .module {
   cursor: url(assets/images/pencil-transparent.png), auto;
 }
@@ -149,6 +162,8 @@ h2, h3, p {
     padding: 16px;
     text-align: left;
     background-color: #f1f1f1;
+    height: fit-content;
+    width: 100%;
     
   }
   
@@ -186,7 +201,7 @@ h2, h3, p {
 }
 
 #card-about {
-    margin-top: 2em; 
+    margin-top: 3em; 
     margin-right: 2em; 
 }
 
@@ -210,20 +225,30 @@ h2, h3, p {
   margin-top: 2rem; 
 }
 
+#tim-drawing {
+  width: 60%; 
+  align-items: center;
+}
+
+#talks-middle-card {
+  align-items: center;
+}
+
 .card2 {
     margin-top: -20em;
 }
 
   /* Responsive columns - one column layout (vertical) on small screens */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     .column {
       min-width: 300px;
       flex-direction: row wrap;
       margin-bottom: 20px;
     }
     .header {
-      display: none; 
+      display: none;  
     }
+    
     .nav {
       display: none;
     }
@@ -236,13 +261,27 @@ h2, h3, p {
       margin-left: 2em; 
       justify-content: center;
     }
+
+    #card-about {
+      margin-left: 3em; 
+    }
   }
 
-  @media screen and (min-width: 601px) {
-    .mobile-menu {
-      display:none; 
+  /* @media screen and (max-width: 601px) {
+    
+    .header {
+      display: none; 
     }
-    .main-menu {
+    .nav {
+      display: none; 
+    }
+  } */
+  @media screen and (min-width: 1001px) {
+    .mobile-menu {
+      display: none;
+    }
+
+    .mobile-header {
       display: none; 
     }
   }
@@ -250,6 +289,9 @@ h2, h3, p {
   @media screen and (min-width: 1400px) {
     .card {
       min-height: 300px;
+    }
+    .mobile-menu {
+      display:none; 
     }
   }
   @media screen and (min-width: 1600px) {
@@ -288,11 +330,12 @@ h2, h3, p {
 }
 
 .menu-toggle {
-  display: inline-block;
+  display: flex;
   padding: .75em 15px; 
   line-height: 1em;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #666666;
+  text-decoration: none; 
 }
 
 .menu-toggle:hover {
