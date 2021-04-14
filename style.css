@@ -59,8 +59,10 @@ h2, h3, p {
 }
 
 .mobile-header img {
-  height: 2em;
+  height: 3em;
+  width: auto;
   padding-top: 15px; 
+   
   
 }
 
