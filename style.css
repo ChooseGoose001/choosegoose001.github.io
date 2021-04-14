@@ -9,20 +9,27 @@ html {
     
 }
 
-h3 {
+h2, h3 {
     color: #800020;
+    padding-top: 1rem; 
 }
 
 
-h3, p {
+h2, h3, p {
     vertical-align: top;
     padding-left: 3rem; 
     padding-right: 1rem; 
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 0; 
+    
     
     
 }
 
+.grey {
+  color:#999999;
+}
 
 
 .coursesImage img {
@@ -150,14 +157,13 @@ h3, p {
     float: left; 
     padding-right: 2em;
     
+    
 }
 
 .card-image1 {
-    width: 52%; 
+    width: 45%; 
     float: left; 
     padding-right: 2em; 
-    
-     
     
 }
 
@@ -168,9 +174,15 @@ h3, p {
 }
 
 .card-image3 {
-    width: 50%; 
+    width: 45%; 
     float: left;
     padding-right: 2em; 
+    
+  
+}
+
+.card-background {
+  background: #cc6633;
 }
 
 #card-about {
@@ -187,6 +199,15 @@ h3, p {
 #antje-image {
     width: 75%; 
     padding-left: 8em;
+}
+
+#about-image {
+  margin-top: 2rem; 
+  width: 69%; 
+}
+
+#top-about-card {
+  margin-top: 2rem; 
 }
 
 .card2 {
@@ -211,6 +232,10 @@ h3, p {
       display: none; 
     }
     
+    .row {
+      margin-left: 2em; 
+      justify-content: center;
+    }
   }
 
   @media screen and (min-width: 601px) {
