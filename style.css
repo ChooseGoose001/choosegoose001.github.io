@@ -59,7 +59,7 @@ h2, h3, p {
 }
 
 .mobile-header img {
-  height: 3em;
+  height: 2em;
   padding-top: 15px; 
   
 }
@@ -203,6 +203,7 @@ h2, h3, p {
 #card-about {
     margin-top: 3em; 
     margin-right: 2em; 
+    margin-bottom: 2em; 
 }
 
 #luci-image {
@@ -232,6 +233,8 @@ h2, h3, p {
 
 #talks-middle-card {
   align-items: center;
+  margin-bottom: 2em; 
+  background-color: #cc9999;
 }
 
 .card2 {
