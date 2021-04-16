@@ -487,14 +487,15 @@ h2, h3, h5, p {
     }
 
     #materials-image {
-      display: none;
-      /* min-width: 320px;  */
+      width: 320px;
+      object-fit: contain;
+
       
     }
 
     #studio-image {
-       
-      max-width: 320px;  
+      width: 320px;  
+      object-fit: contain; 
        
     }
 
@@ -509,21 +510,13 @@ h2, h3, h5, p {
     }
   }
 
-  /* @media screen and (max-width: 601px) {
-    
-    .header {
-      display: none; 
-    }
-    .nav {
-      display: none; 
-    }
-  } */
 
   @media screen and (min-width: 1001px) and (max-width: 1119px) {
     .card {
       min-height: 300px;
       margin-left: 0em; 
     }
+
 
     .card-wide {
       margin-right: -2.8em; 
@@ -545,9 +538,16 @@ h2, h3, h5, p {
     #about-image {
       width: 100%; 
     }
+
+    #studio-image {
+      width: 320px;  
+      object-fit: contain; 
+      margin-left: 2em; 
+       
+    }
   }
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1200px) {
     .card {
       min-height: 300px;
     }
@@ -565,6 +565,17 @@ h2, h3, h5, p {
 
     #card-about {
       margin-bottom: 250px; 
+    }
+
+    #card-about {
+      min-width: 320px; 
+    }
+
+    #studio-image {
+      width: 450px; 
+      object-fit: contain;
+      margin-top: 1em; 
+      margin-left: 2em;
     }
   }
   @media screen and (min-width: 1600px) {
