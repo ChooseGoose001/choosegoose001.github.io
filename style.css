@@ -217,6 +217,10 @@ h2, h3, h5, p {
   opacity: 0;
 }
 
+.empty-space {
+  width: 350px;
+}
+
 .fa-instagram {
   vertical-align: text-bottom;
   width: 2em; 
