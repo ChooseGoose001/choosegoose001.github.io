@@ -483,13 +483,13 @@ h2, h3, h5, p {
     }
 
     #materials-image {
-      height: fit-content;
+      display: none;
       /* min-width: 320px;  */
       
     }
 
     #studio-image {
-      display: none; 
+      height: 40%; 
       /* min-width: 320px;  */
        
     }
