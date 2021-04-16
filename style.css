@@ -415,7 +415,11 @@ h2, h3, h5, p {
   
   
   @media screen and (max-width: 1000px) {
-    
+    .card-wide {
+      min-width: 310px;
+
+    }
+
     .column {
       min-width: 350px;
       flex-direction: row wrap;
