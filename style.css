@@ -468,7 +468,7 @@ h2, h3, h5, p {
 
     #aims-image {
       min-width: 320px;
-      margin-right: -0.75em;
+      margin-right: -2.5em;
     }
 
     #about-image {
@@ -483,8 +483,9 @@ h2, h3, h5, p {
     }
 
     #materials-image {
-      min-width: 320px; 
-      height: auto; 
+      display: none; 
+      /* min-width: 320px; 
+      height: auto;  */
     }
 
     #studio-image {
