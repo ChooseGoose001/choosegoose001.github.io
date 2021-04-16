@@ -479,13 +479,15 @@ h2, h3, h5, p {
     }
 
     #materials-image {
-      max-height: 350px; 
+      min-width: 320px; 
+      height: auto; 
     }
 
     #studio-image {
-      max-height: 350px; 
+      min-width: 320px; 
+      height: auto; 
     }
-    
+
     #tim-drawing {
       min-width: 310px; 
       
