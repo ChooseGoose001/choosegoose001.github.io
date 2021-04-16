@@ -123,6 +123,7 @@ h2, h3, h5, p {
   margin: 3em -1em 2em 2em; 
   text-align: left;
   padding-bottom: 2em; 
+  padding-right: 2em; 
   
 }
 
@@ -481,6 +482,10 @@ h2, h3, h5, p {
       max-height: 350px; 
     }
 
+    #studio-image {
+      max-height: 350px; 
+    }
+    
     #tim-drawing {
       min-width: 310px; 
       
