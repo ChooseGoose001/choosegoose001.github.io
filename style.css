@@ -483,14 +483,19 @@ h2, h3, h5, p {
     }
 
     #materials-image {
-      display: none; 
-      /* min-width: 320px; 
-      height: auto;  */
+      
+      min-width: 320px; 
+      
     }
 
     #studio-image {
       min-width: 320px; 
-      height: auto; 
+       
+    }
+
+    #talks-middle-card {
+      margin-top: 2em; 
+       margin-bottom: -3em; 
     }
 
     #tim-drawing {
