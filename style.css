@@ -441,6 +441,10 @@ h2, h3, h5, p {
       margin-left: 2em;
       margin-bottom: 4em; 
     }
+
+    .empty-card {
+      display: none; 
+    }
    
 
     .header {
@@ -489,8 +493,8 @@ h2, h3, h5, p {
     }
 
     #studio-image {
-      height: 40%; 
-      /* min-width: 320px;  */
+       
+      max-width: 320px;  
        
     }
 
@@ -515,9 +519,18 @@ h2, h3, h5, p {
     }
   } */
 
-  @media screen and (min-width: 1001px) {
+  @media screen and (min-width: 1001px) and (max-width: 1119px) {
     .card {
       min-height: 300px;
+      margin-left: 0em; 
+    }
+
+    .card-wide {
+      margin-right: -2.8em; 
+    }
+
+    .empty-card {
+      height: 250px; 
     }
     
     .mobile-menu {
@@ -527,14 +540,31 @@ h2, h3, h5, p {
     .mobile-header {
       display: none; 
     }
+
+
+    #about-image {
+      width: 100%; 
+    }
   }
 
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: 1366px) {
     .card {
       min-height: 300px;
     }
+
+    .empty-card {
+      display: none;
+    }
     .mobile-menu {
       display:none; 
+    }
+
+    .mobile-header {
+      display: none; 
+    }
+
+    #card-about {
+      margin-bottom: 250px; 
     }
   }
   @media screen and (min-width: 1600px) {
@@ -590,9 +620,10 @@ h2, h3, h5, p {
   display: none;
   left: -200px;
   top: 0;
-  height: 100%; 
-  /* overflow-y: scroll;*/
-  overflow-x: visible;
+  height: fit-content;
+  
+  /* overflow-y: scroll; */
+  /* overflow-x: visible; */
   transition: left 0.3s ease, box-shadow 0.3s ease;
   z-index: 999; 
 }
