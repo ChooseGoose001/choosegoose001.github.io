@@ -477,6 +477,10 @@ h2, h3, h5, p {
       
     }
 
+    #materials-image {
+      max-height: 350px; 
+    }
+
     #tim-drawing {
       min-width: 310px; 
       
