@@ -8,13 +8,13 @@ body {
   margin: 0; 
 }
 
-h2, h3 {
+h1, h2, h3 {
     color: #800020;
     padding-top: 1rem; 
 }
 
 
-h2, h3, h5, p {
+h1, h2, h3, h5, p {
     vertical-align: top;
     padding-left: 3rem; 
     padding-right: 1rem; 
@@ -257,7 +257,7 @@ h2, h3, h5, p {
 }
 
 .mobile-header img {
-  height: 4.5em; 
+  height: 4.5em; /*appears stretched at 3em*/
   padding-top: 15px; 
    
   
@@ -305,9 +305,13 @@ h2, h3, h5, p {
 }
 
 .stripe {
-  width: 100px;
+ width: 100px;
  align-items: baseline;
  display: none; 
+}
+
+.stripe img {
+  display: none; 
 }
 
 .studio-card-wide {
