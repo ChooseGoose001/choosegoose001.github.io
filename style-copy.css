@@ -541,7 +541,8 @@ h1, h2, h3, h5, p {
     }
 
     #about-image {
-      min-width: 320px; 
+      min-width: 350px; /*previously 320*/
+      position: relative; /* new to stop the absolute position on desktop */
     }
 
     #basics-left {
@@ -734,7 +735,7 @@ h1, h2, h3, h5, p {
 
    
     .coursecard {
-      width: 400px; 
+      width: 500px; /*previously 400px*/
     }
 
     .column {
@@ -764,7 +765,7 @@ h1, h2, h3, h5, p {
       width: 80%; 
     }
     #studio-card {
-      /* margin-left: 25em;  */
+      margin-left: 25em;  /* previously commented out */
       margin-bottom: 40em; 
     }
     #studio-image {
