@@ -44,10 +44,6 @@ h1, h2, h3, h5, p {
       
 }
 
-.studio-title  {
-  padding-left: 1em; 
-  }
-
 
 #h3-links {
   color: black;  
@@ -542,6 +538,10 @@ h1, h2, h3, h5, p {
     .studio-padding {
       padding: 2em; 
     }
+
+    .studio-title  {
+      padding-left: 1em; 
+      }
 
     #aims-image {
       min-width: 320px; 
