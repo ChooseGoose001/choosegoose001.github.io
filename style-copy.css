@@ -902,6 +902,17 @@ h1, h2, h3, h5, p {
       padding-left: 9em; 
     }
     
+    .dots {
+      max-width: 1000px; 
+    }
+    .mobile-header {
+      display: none;
+    }
+
+    .mobile-menu {
+      display: none; 
+    }
+    
     #about-image {
       max-height: 450px;  
       margin-right: 3em; 
