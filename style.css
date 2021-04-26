@@ -2,7 +2,6 @@ html {
   font-size: 100%; /*accessibility*/
 }
 
-  
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0; 
@@ -285,9 +284,9 @@ h1, h2, h3, h5, p {
 
 }
 
-.main {
+/* .main {
   padding-bottom: 20em; 
-}
+} */
 
 .mobile-header {
   display: flex;
@@ -628,6 +627,10 @@ h1, h2, h3, h5, p {
     .header {
       display: none;  
     }
+
+    .main {
+      padding-bottom: 40em; 
+    }
     
     .nav {
       display: none;
@@ -694,6 +697,10 @@ h1, h2, h3, h5, p {
       height: 250px; 
     }
     
+    .main {
+      padding-bottom: 40em; 
+    }
+
     .mobile-menu {
       display: none;
     }
@@ -736,11 +743,17 @@ h1, h2, h3, h5, p {
 
     .card {
       min-height: 300px;
+      margin: inherit; /*solves ipad in landscape and ipadPro layout */
     }
 
     .empty-card {
       display: none;
     }
+
+    .main {
+      padding-bottom: 40em; 
+    }
+
     .mobile-menu {
       display:none; 
     }
@@ -794,9 +807,17 @@ h1, h2, h3, h5, p {
       min-height: 300px;
     }
 
+    .card-image2 {
+      width: 60%; 
+    }
     .empty-card {
       display: none;
     }
+
+    .main {
+      padding-bottom: 40em; 
+    }
+
     .mobile-menu {
       display:none; 
     }
@@ -840,6 +861,12 @@ h1, h2, h3, h5, p {
     }
   }
 
+  @media screen and (min-width: 1465px) and (max-width: 1598px) {
+    .card-image1 {
+      width: 42%; 
+    }
+  }
+
   @media screen and (min-width: 1600px) and (max-width: 1899px) {
     .about-card {
       position: relative; 
@@ -853,6 +880,10 @@ h1, h2, h3, h5, p {
     }
     .dots {
         max-width: 1000px;
+    }
+
+    .main {
+      padding-bottom: 40em; 
     }
     
     #about-image {
@@ -909,6 +940,11 @@ h1, h2, h3, h5, p {
     .dots {
       max-width: 1000px; 
     }
+
+    .main {
+      padding-bottom: 30em; 
+    }
+
     .mobile-header {
       display: none;
     }

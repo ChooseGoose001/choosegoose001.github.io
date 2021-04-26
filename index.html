@@ -6,6 +6,7 @@
 <link rel="shortcut icon" type="image/jpg" href="assets/images/logo-transparent-16x16-darker.png"/>
 <head>
 <link rel="stylesheet" href="style.css">
+
 <style>
     .main {
         background-color: #cccc99;
@@ -74,7 +75,23 @@
 </header>
     <main class = "main">
         <div class = "coursesImage">
-            <img src="assets/images/evelyn-dunbar-3x1.jpg" alt = "evelyn dunbar sketch"/>
+        <img id="randomImage"/>
+        <script>
+            function getRandomImage(){
+                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
+                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
+                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
+                            'assets/images/luci-turbans-3x1.jpg',
+                            'assets/images/evelyn-dunbar-3x1.jpg'];
+                var image = images[Math.floor(Math.random()*images.length)];
+                return image; 
+            }
+            function displayRandomImage(){
+                var htmlImage = document.getElementById("randomImage");
+                htmlImage.src = getRandomImage(); 
+            }
+            displayRandomImage(); 
+        </script>
         </div>
         <div class="row">
             <div class="column">
