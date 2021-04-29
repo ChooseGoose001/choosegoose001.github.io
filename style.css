@@ -285,6 +285,25 @@ h1, h2, h3, h5, p {
 
 }
 
+.menu-container:hover .stripe{
+  visibility: visible; 
+  margin-left: -0.5em;
+}
+
+/* a:visited .stripe{
+  visibility: visible;
+  margin-left: -0.5em;
+} */
+
+
+.menu-container {
+  width: 6.25em; 
+  display: inline-block;
+  margin: 0; 
+  padding: 1em; 
+  margin-inline: 0.75em; 
+  
+}
 
 .mobile-header {
   display: flex;
@@ -339,22 +358,6 @@ h1, h2, h3, h5, p {
  width: 6.25em;
  visibility: hidden;
  
-}
-
-
-.menu-container:hover .stripe{
-  visibility: visible; 
-  
-}
-
-
-.menu-container {
-  width: 6.25em; 
-  display: inline-block;
-  margin: 0; 
-  padding: 1em; 
-  margin-inline: 0.75em; 
-  
 }
 
 
@@ -481,6 +484,10 @@ h1, h2, h3, h5, p {
 
 #top-about-card {
   margin-top: 2rem; 
+}
+
+#red {
+  margin-top: -0.5em;
 }
 
 
