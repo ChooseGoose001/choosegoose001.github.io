@@ -80,6 +80,17 @@ h1, h2, h3, h5, p {
     
  }
 
+ .calendar {
+  object-fit: contain;
+  height: 30em;
+
+ }
+
+ .calendar-break {
+        width: 100%;
+        border: 20px solid #999933;
+ }
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
@@ -212,7 +223,7 @@ h1, h2, h3, h5, p {
   grid-row: span 3 / auto; 
   text-align: left; 
   padding-bottom: 2em; 
-  padding-right: 2em;
+  /* padding-right: 2em; */ /*removes extra white margin on right side*/
 }
 
 .coursesImage img {
@@ -285,15 +296,13 @@ h1, h2, h3, h5, p {
 
 }
 
+
+
 .menu-container:hover .stripe{
   visibility: visible; 
   margin-left: -0.5em;
 }
 
-/* a:visited .stripe{
-  visibility: visible;
-  margin-left: -0.5em;
-} */
 
 
 .menu-container {
