@@ -80,17 +80,6 @@ h1, h2, h3, h5, p {
     
  }
 
- .calendar {
-  object-fit: contain;
-  height: 30em;
-
- }
-
- .calendar-break {
-        width: 100%;
-        border: 20px solid #999933;
- }
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
@@ -128,8 +117,12 @@ h1, h2, h3, h5, p {
     width: 45%; 
     float: left;
     padding-right: 2em; 
-    
-  
+}
+
+.card-image4 {
+    width: 25%; 
+    float: left;
+    padding-right: 2em; 
 }
 
 .card-background {
@@ -195,7 +188,7 @@ h1, h2, h3, h5, p {
   background-position: center;
   background-repeat: no-repeat; 
   padding-bottom: 2em;
-  padding-right: 2em;
+  padding-right: 0.75em;
   margin-top: 3rem; 
   margin-left: 3rem;
   grid-row: span 3 / auto; 
@@ -223,7 +216,7 @@ h1, h2, h3, h5, p {
   grid-row: span 3 / auto; 
   text-align: left; 
   padding-bottom: 2em; 
-  /* padding-right: 2em; */ /*removes extra white margin on right side*/
+  /* padding-right: 2em; */
 }
 
 .coursesImage img {
@@ -296,13 +289,15 @@ h1, h2, h3, h5, p {
 
 }
 
-
-
 .menu-container:hover .stripe{
   visibility: visible; 
   margin-left: -0.5em;
 }
 
+/* a:visited .stripe{
+  visibility: visible;
+  margin-left: -0.5em;
+} */
 
 
 .menu-container {
@@ -543,6 +538,14 @@ h1, h2, h3, h5, p {
       display: none;  
     }
     
+    .large-screens {
+      display: none; 
+    }
+
+    .tiny-screens{
+      display: none;
+    }
+
     .nav {
       display: none;
     }
@@ -652,6 +655,14 @@ h1, h2, h3, h5, p {
       display: none;  
     }
 
+    .large-screens {
+      display: none; 
+    }
+    
+    .small-screens {
+      display: none;
+    }
+
     .main {
       padding-bottom: 40em; 
     }
@@ -702,6 +713,15 @@ h1, h2, h3, h5, p {
     }
   }
    
+  @media screen and (min-width: 912px) and (max-width: 1025px) {
+    .small-screens {
+      display: none;
+    }
+
+    .large-screens {
+      display: none;
+    }
+  }
 
   @media screen and (min-width: 1001px) and (max-width: 1025px) {
     .about-card {
@@ -721,6 +741,14 @@ h1, h2, h3, h5, p {
       height: 250px; 
     }
     
+    .large-screens {
+      display: none; 
+    }
+    
+    .small-screens{
+      display: none;
+    }
+
     .main {
       padding-bottom: 40em; 
     }
@@ -760,7 +788,7 @@ h1, h2, h3, h5, p {
        
     }
   }
-  @media screen and (min-width: 1026px) and (max-width: 1999px){
+  @media screen and (min-width: 1026px) and (max-width: 1998px){
     .about-card {
       position: relative; 
     }
@@ -786,6 +814,13 @@ h1, h2, h3, h5, p {
       display: none; 
     }
 
+    .tiny-screens {
+      display: none;
+    }
+
+    .large-screens {
+      display: none;
+    }
     
     #about-image {
       width: 100%; 
@@ -850,6 +885,14 @@ h1, h2, h3, h5, p {
       display: none; 
     }
 
+    .tiny-screens {
+      display: none; 
+    }
+
+    .large-screens {
+      display: none;
+    }
+
     
     #about-image {
       width: 75%; 
@@ -889,6 +932,14 @@ h1, h2, h3, h5, p {
     .card-image1 {
       width: 42%; 
     }
+
+    .tiny-screens {
+      display: none; 
+    }
+
+    .large-screens {
+      display: none;
+    }
   }
 
   @media screen and (min-width: 1600px) and (max-width: 1899px) {
@@ -910,6 +961,14 @@ h1, h2, h3, h5, p {
       padding-bottom: 40em; 
     }
     
+    .tiny-screens {
+      display: none; 
+    }
+
+    .large-screens {
+      display: none;
+    }
+
     #about-image {
       width: 80%; 
       position: absolute; 
@@ -928,7 +987,7 @@ h1, h2, h3, h5, p {
     }
   
   }
-  @media screen and (min-width: 1900px) {
+  @media screen and (min-width: 1999px) {
     .about-card {
       max-width: 800px;
       margin-bottom: -2em; 
@@ -975,6 +1034,14 @@ h1, h2, h3, h5, p {
 
     .mobile-menu {
       display: none; 
+    }
+
+    .small-screens {
+      display: none; 
+    }
+
+    .tiny-screens {
+      display:none; 
     }
     
     #about-image {
