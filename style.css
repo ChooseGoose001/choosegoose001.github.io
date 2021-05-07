@@ -147,6 +147,7 @@ h1, h2, h3, h5, p {
   background-position: center;
   background-repeat: no-repeat; 
   margin: 3em -1em 2em 2em; 
+  margin-bottom: auto; 
   text-align: left;
   padding-bottom: 2em; 
   padding-right: 2em; 
@@ -188,9 +189,10 @@ h1, h2, h3, h5, p {
   background-position: center;
   background-repeat: no-repeat; 
   padding-bottom: 2em;
-  padding-right: 0.75em;
+  padding-right: 2em;
   margin-top: 3rem; 
   margin-left: 3rem;
+  margin-bottom: auto; 
   grid-row: span 3 / auto; 
   text-align: left;
 
@@ -213,10 +215,11 @@ h1, h2, h3, h5, p {
   margin-top: 3rem; 
   margin-left: 3rem;
   margin-right: 3rem; 
+  margin-bottom: auto; 
   grid-row: span 3 / auto; 
   text-align: left; 
   padding-bottom: 2em; 
-  /* padding-right: 2em; */
+  padding-right: 2em;
 }
 
 .coursesImage img {
@@ -509,6 +512,10 @@ h1, h2, h3, h5, p {
 
     }
 
+    .card-image4 {
+      width: 40%; 
+    }
+
     .column {
       min-width: 350px;
       flex-direction: row wrap;
@@ -542,14 +549,6 @@ h1, h2, h3, h5, p {
       display: none;  
     }
     
-    .large-screens {
-      display: none; 
-    }
-
-    .tiny-screens{
-      display: none;
-    }
-
     .nav {
       display: none;
     }
@@ -558,6 +557,14 @@ h1, h2, h3, h5, p {
       display: none; 
     }
     
+    .large-screens {
+      display: none; 
+    }
+
+    .tiny-screens{
+      display: none;
+    }
+
     .row {
       margin-left: -1.3em; 
       justify-content: center;
@@ -744,7 +751,7 @@ h1, h2, h3, h5, p {
     .empty-card {
       height: 250px; 
     }
-    
+
     .large-screens {
       display: none; 
     }
@@ -752,7 +759,7 @@ h1, h2, h3, h5, p {
     .small-screens{
       display: none;
     }
-
+    
     .main {
       padding-bottom: 40em; 
     }
@@ -792,7 +799,7 @@ h1, h2, h3, h5, p {
        
     }
   }
-  @media screen and (min-width: 1026px) and (max-width: 1998px){
+  @media screen and (min-width: 1026px) and (max-width: 1999px){
     .about-card {
       position: relative; 
     }
@@ -896,7 +903,6 @@ h1, h2, h3, h5, p {
     .large-screens {
       display: none;
     }
-
     
     #about-image {
       width: 75%; 
@@ -964,7 +970,7 @@ h1, h2, h3, h5, p {
     .main {
       padding-bottom: 40em; 
     }
-    
+
     .tiny-screens {
       display: none; 
     }
@@ -972,7 +978,7 @@ h1, h2, h3, h5, p {
     .large-screens {
       display: none;
     }
-
+    
     #about-image {
       width: 80%; 
       position: absolute; 
@@ -991,7 +997,7 @@ h1, h2, h3, h5, p {
     }
   
   }
-  @media screen and (min-width: 1999px) {
+  @media screen and (min-width: 1900px) {
     .about-card {
       max-width: 800px;
       margin-bottom: -2em; 
@@ -1039,15 +1045,15 @@ h1, h2, h3, h5, p {
     .mobile-menu {
       display: none; 
     }
-
+    
     .small-screens {
       display: none; 
     }
 
     .tiny-screens {
-      display:none; 
+      display: none; 
     }
-    
+
     #about-image {
       max-height: 450px;  
       margin-right: 3em; 

@@ -2,33 +2,30 @@
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
 <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-<title>Eye To Pencil</title>
+<title>Eye To Pencil - Courses </title>
 <link rel="shortcut icon" type="image/jpg" href="assets/images/logo-transparent-16x16-darker.png"/>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="assets/css/lightbox.css">
-
 <style>
-    @import url('assets/css/base.css');
-    @import url('assets/css/photo-grid.css');
     .main {
-        background-color: #cccc99;
+        background-color: #999933;
     }
-    
+
     footer {
-        background-color: #cccc99;
+        background-color: #999933;
     }
 </style>
 </head>
+
 <body>
     <header class = "header">
         <a href = "index.html"><img src="assets/images/logo-transparent.png" alt = "eye to pencil logo" /></a>
     </header>
-
+    
     <nav class = "nav">
         <ul>
-            <div class = "menu-container"><li><a href ="index.html" id = "index">Home</a></li>
-                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet" style = "visibility: visible; margin-left: -0.5em;"/>
+            <div class = "menu-container"><li class = "link"><a href ="index.html">Home</a></li>
+                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet"/>
             </div>
             <div class = "menu-container">
             <li><a href ="about.html">About</a></li>
@@ -40,7 +37,7 @@
             </div>
             <div class = "menu-container">
             <li><a href ="talks.html">Talks</a></li>
-            <img src="assets/images/stripe-red-transparent2.png" class = "stripe" id = "red" />
+            <img src="assets/images/stripe-orange-transparent.png" class = "stripe" id = "orange" />
             </div>
             <div class = "menu-container">
             <li><a href ="studio.html">Studio</a></li>
@@ -55,16 +52,13 @@
                 <i class="fab fa-instagram"></i></a></li>
                 <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet"/>
             </div>
-            
-            
-            
              
         </ul>
             <img src="assets/images/dots-BW.jpg" alt = "dots" class = "dots"/>
     </nav>
     <header class = "mobile-header">
-        <a href = "index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo"/></a>
-  <nav class = "mobile-menu">
+        <a href = "index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo" /></a>
+    <nav class = "mobile-menu">
         <a href="#main-menu" 
         id="main-menu-toggle"
         class="menu-toggle"
@@ -98,53 +92,48 @@
         aria-hidden="true"
         hidden></a>
     </nav>
-</header>
-    <main class = "main">
-        <div class = "coursesImage">
-        <img id="randomImage"/>
-        <script>
-            function getRandomImage(){
-                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
-                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
-                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
-                            'assets/images/luci-turbans-3x1.jpg',
-                            'assets/images/evelyn-dunbar-3x1.jpg'];
-                var image = images[Math.floor(Math.random()*images.length)];
-                return image; 
-            }
-            function displayRandomImage(){
-                var htmlImage = document.getElementById("randomImage");
-                htmlImage.src = getRandomImage(); 
-            }
-            displayRandomImage(); 
-        </script>
-        </div>
-        <div class="gallery-photo-grid">
-            
-            <div class="gallery-card" style="background-image:url(assets/images/2020Europa_poppies\ copy.jpg)">
-              <a href="assets/images/2020Europa_poppies copy.jpg" data-lightbox="2020" data-title="Europa Poppies, 2020"><img src="assets/images/2020Europa_poppies copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card gallery-card-wide" style="background-color: rgb(255, 255, 255);">
-              <a href="assets/images/2020HomeMural-landscape5MB copy.jpg" data-lightbox="2020" data-title="Home Mural, 2020"><img src="assets/images/2020HomeMural-landscape5MB copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card" style="background-image: url(images/2020HomeMural-portrait-birds5Mb\ copy.jpg)">
-              <a href="assets/images/2020HomeMural-portrait-birds5Mb copy.jpg" data-lightbox="2020" data-title="Home Mural, Birds, 2020"><img src="assets/images/2020HomeMural-portrait-birds5Mb copy.jpg" class="gallery-card"></a>     
-            </div>
-            <div class="gallery-card" style="background-image: url(images/2020IMG_3168-2.jpg)">
-              <a href="assets/images/2020IMG_3168-2.jpg" data-lightbox="2020" data-title="Tree Of Lives, 2020"><img src="assets/images/2020IMG_3168-2.jpg" class="gallery-card"></a>
-            </div>
-            
-           
-            
-        </div>
+    </header>
     
-        
+    <main class = "main">
+        <div class = "photo-grid">
+            <div class = "coursecard" id = "coursecard-mobile">
+              <h3><a href = "courses.html" style = "color: black;">Upcoming /</a> <a href = "archive.html" style = "color: black;">Archive</a></h3>
+					<p>
+                   	More information about <a href="courses.html" style="color: black"> Upcoming Courses</a> or <a href="archive.html" title="archive" style="color: black">archived</a> documentation on previous courses. </p>
+            </div>
+          <div class="card-wide">
+                <h2><img src="assets/images/icons/Park-drawing-border-200.jpg" alt="Lunchtime drawing" class="card-image4">Lunchtime Drawing in the Park</h2>
+                <h3 id = "h3-links">Drawing in the Park – Wednesday Lunchtime</h3>
+                <p>7, 14, 21 and 28 July, 2021</p>
+            <p>1 hour
+			<br>Wednesdays 1 – 2 pm</p>
+                <p>£8 (including paper, and the loan of a drawing board, pencil, eraser)
+			  	<br>Easy payment by card reader on site.</p>
+			  	<p>No Booking necessary - Come and find us in Spa Fields, it will be first come, first served.</p>
+                <br>
+			   
+            <!--<button type="button" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScNsnI5P1LreHMVGz-qTuFlteLc9mr3Ka8WHem-aLxkgGeuPw/viewform?usp=sf_link', '_blank')">Monday Bookings</button>-->
+                <h3 class = "grey">Course Description</h3>
+                <p>We are hoping for sunny days for lunchtime drawing in Spa Fields EC1, just around the corner from the Drawing Studio. We will bring pencils, drawing boards and paper. Come and join us to draw whatever you like. We will be there for informal feedback, suggestions and supervision for those who want it.
+                </p>
+                <h3 class = "grey">Who</h3>
+                <p>These sessions are suitable for anyone (aged 18+) with any level of experience, it is an informal and open session for anyone wanting to draw.
+                </p>
+               
+            </div>
            
+            <div class="coursecard-right">
+                <img src="assets/images/materials.jpg" id = "materials-image"/>
+                <h3 class = "grey"> Materials and Useful Info </h3>
+                <p>We will bring paper, and will lend pencils, erasers and drawing boards.</p>
+               
+              <p>Here is a <a href = "contact.html" style = "color: black;">map</a> of how to get to us.</p>
+                <p>These are our <a href="terms.html" title="Terms and conditions" style = "color: black;">Terms &amp; Conditions</a>.</p>
+            </div>
+            
+        </div>
     </main>
-    <script src="assets/js/lightbox-plus-jquery.js"></script>
     <script src="https://kit.fontawesome.com/6864c7d28f.js" crossorigin="anonymous"></script>
 </body>
-<footer>
-  
-</footer>
+
 </html>
