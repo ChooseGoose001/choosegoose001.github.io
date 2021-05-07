@@ -447,13 +447,11 @@ h1, h2, h3, h5, p {
 
 
 #talks-middle-card {
-  align-items: center;
-  margin-bottom: 2em; 
-  background-color: #cc9999;
   grid-column: span 2 / auto;
   grid-row: span 6 / auto;
   display: flex;
   flex-direction: column;
+  background:  #f1f1f1;
   font-size: 16px;
   height: fit-content;
   width: fit-content;
@@ -463,8 +461,10 @@ h1, h2, h3, h5, p {
   background-position: center;
   background-repeat: no-repeat; 
   margin: 3em -1em 2em 2em; 
+  margin-bottom: auto; 
   text-align: left;
   padding-bottom: 2em; 
+  padding-right: 2em; 
       
 
 }
@@ -640,6 +640,12 @@ h1, h2, h3, h5, p {
     }
   }
 
+   @media screen and (min-width: 650px) and (max-width: 802px){
+   .card-wide {
+     margin-left: 9em;
+   }
+
+   }
    @media screen and (min-width: 803px) and (max-width: 1000px){
     .about-card{
       position: relative; 
@@ -654,6 +660,7 @@ h1, h2, h3, h5, p {
 
     .card-wide {
       margin-right: -2.8em; 
+      margin-left: 5em; 
     }
 
  
@@ -859,7 +866,7 @@ h1, h2, h3, h5, p {
     }
 
     #studio-image {
-      width: 400px; 
+      width: 380px; 
       object-fit: contain;
       margin-top: 1em; 
       margin-left: 2em;
@@ -930,7 +937,7 @@ h1, h2, h3, h5, p {
     }
 
     #studio-image {
-      width: 400px; 
+      width: 380px; 
       object-fit: contain;
       margin-top: 1em; 
       margin-left: 10em;
@@ -1023,7 +1030,7 @@ h1, h2, h3, h5, p {
 
    
     .coursecard {
-      width: 500px; /*previously 400px*/
+      width: 80%; /*previously 500px*/
     }
 
     .column {
