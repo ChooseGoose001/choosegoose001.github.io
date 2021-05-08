@@ -8,15 +8,6 @@ body {
 }
 
 
-html,body /*fixes extra white margin and horizontal scroll on phones */
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden; 
-}
-
 button {
   background-color: #800020; 
   border: none;
@@ -307,10 +298,7 @@ h1, h2, h3, h5, p {
   margin-left: -0.5em;
 }
 
-/* a:visited .stripe{
-  visibility: visible;
-  margin-left: -0.5em;
-} */
+
 
 
 .menu-container {
@@ -345,9 +333,8 @@ h1, h2, h3, h5, p {
   display: inline;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  /* padding: 10px; */
   margin-top: 2rem; 
-  /* margin-inline: 0.75em; */
+  
   
 }
 
@@ -517,6 +504,16 @@ h1, h2, h3, h5, p {
   
   @media screen and (max-width: 802px) { /*previously 803 */
     
+
+    html,body /*fixes extra white margin and horizontal scroll on phones */
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
     .card-wide {
       min-width: 310px; /*all cards were previously 310, changing to match home/ about columns */
 
