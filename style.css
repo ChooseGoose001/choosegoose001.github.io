@@ -7,6 +7,16 @@ body {
   margin: 0; 
 }
 
+
+html,body /*fixes extra white margin and horizontal scroll on phones */
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 button {
   background-color: #800020; 
   border: none;
@@ -645,6 +655,10 @@ h1, h2, h3, h5, p {
      margin-left: 9em;
    }
 
+   #studio-image {
+     min-width: 300px; 
+   }
+
    }
    @media screen and (min-width: 803px) and (max-width: 1000px){
     .about-card{
@@ -653,8 +667,10 @@ h1, h2, h3, h5, p {
     }
 
     .card {
-      min-width: 350px;
+      max-width: 380px;
+      max-height: 370px; 
       margin-left: 0em; 
+      
     }
 
 
