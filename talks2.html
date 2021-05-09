@@ -2,21 +2,17 @@
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
 <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-<title>Eye To Pencil</title>
+<title>Eye To Pencil - Talks </title>
 <link rel="shortcut icon" type="image/jpg" href="assets/images/logo-transparent-16x16-darker.png"/>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="assets/css/lightbox.css">
-
 <style>
-    @import url('assets/css/base.css');
-    @import url('assets/css/photo-grid.css');
     .main {
-        background-color: #cccc99;
+        background-color: #ffffff;
     }
     
     footer {
-        background-color: #cccc99;
+        background-color: #ffffff;
     }
 </style>
 </head>
@@ -24,11 +20,10 @@
     <header class = "header">
         <a href = "index.html"><img src="assets/images/logo-transparent.png" alt = "eye to pencil logo" /></a>
     </header>
-
     <nav class = "nav">
         <ul>
-            <div class = "menu-container"><li><a href ="index.html" id = "index">Home</a></li>
-                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet" style = "visibility: visible; margin-left: -0.5em;"/>
+            <div class = "menu-container"><li class = "link"><a href ="index.html">Home</a></li>
+                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet"/>
             </div>
             <div class = "menu-container">
             <li><a href ="about.html">About</a></li>
@@ -40,7 +35,7 @@
             </div>
             <div class = "menu-container">
             <li><a href ="talks.html">Talks</a></li>
-            <img src="assets/images/stripe-red-transparent2.png" class = "stripe" id = "red" />
+            <img src="assets/images/stripe-red-transparent2.png" class = "stripe" id = "red" style = "visibility: visible; margin-left: -0.5em;" />
             </div>
             <div class = "menu-container">
             <li><a href ="studio.html">Studio</a></li>
@@ -63,8 +58,8 @@
             <img src="assets/images/dots-BW.jpg" alt = "dots" class = "dots"/>
     </nav>
     <header class = "mobile-header">
-        <a href = "index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo"/></a>
-  <nav class = "mobile-menu">
+        <a href ="index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo" /></a>
+    <nav class = "mobile-menu">
         <a href="#main-menu" 
         id="main-menu-toggle"
         class="menu-toggle"
@@ -98,53 +93,34 @@
         aria-hidden="true"
         hidden></a>
     </nav>
-</header>
-    <main class = "main">
-        <div class = "coursesImage">
-        <img id="randomImage"/>
-        <script>
-            function getRandomImage(){
-                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
-                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
-                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
-                            'assets/images/luci-turbans-3x1.jpg',
-                            'assets/images/evelyn-dunbar-3x1.jpg'];
-                var image = images[Math.floor(Math.random()*images.length)];
-                return image; 
-            }
-            function displayRandomImage(){
-                var htmlImage = document.getElementById("randomImage");
-                htmlImage.src = getRandomImage(); 
-            }
-            displayRandomImage(); 
-        </script>
-        </div>
-        <div class="gallery-photo-grid">
-            
-            <div class="gallery-card" style="background-image:url(assets/images/gallery/2020Europa_poppies\ copy.jpg)">
-              <a href="assets/images/gallery/2020Europa_poppies copy.jpg" data-lightbox="2020" data-title="Europa Poppies, 2020"><img src="assets/images/gallery/2020Europa_poppies copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card gallery-card-wide" style="background-color: rgb(255, 255, 255);">
-              <a href="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" data-lightbox="2020" data-title="Home Mural, 2020"><img src="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020HomeMural-portrait-birds5Mb\ copy.jpg)">
-              <a href="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" data-lightbox="2020" data-title="Home Mural, Birds, 2020"><img src="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" class="gallery-card"></a>     
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020IMG_3168-2.jpg)">
-              <a href="assets/images/gallery/2020IMG_3168-2.jpg" data-lightbox="2020" data-title="Tree Of Lives, 2020"><img src="assets/images/gallery/2020IMG_3168-2.jpg" class="gallery-card"></a>
-            </div>
-            
-           
-            
-        </div>
+    </header>
     
+    <main class = "main">
+        <div class = "photo-grid">
+            <div class = "coursecard">
+                <h3>Upcoming / Archive </h3> 
+                <p>Our talk series will be starting in September 2021. Info to follow soon.
+                </p>          
+            </div>
+            <div id = "talks-middle-card">
+                <img src="assets/images/Tim-Macfarlane-drawing.jpg" id = "tim-drawing"/>
+            </div>
+            <div class = "coursecard-right">
+                <h1>Talks</h1>
+                <p>We will be running a series of talks with experienced creatives across a range of disciplines including: art, architecture, engineering, science, music and design. Engaging in discussions about common visual ground and where drawing fits in.</p>
+				<p>We already have a wonderful list of speakers and will be putting up more information on them with respective dates shortly. 
+                </p>
+            </div>
+            <div class = "empty-card" style = "height: 600px;">
+
+            </div>
         
-           
+        </div>
     </main>
-    <script src="assets/js/lightbox-plus-jquery.js"></script>
     <script src="https://kit.fontawesome.com/6864c7d28f.js" crossorigin="anonymous"></script>
+
 </body>
 <footer>
-  
+    
 </footer>
 </html>

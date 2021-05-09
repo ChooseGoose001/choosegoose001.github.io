@@ -274,6 +274,10 @@ h1, h2, h3, h5, p {
   
 }
 
+.gallery-photo-grid {
+  padding-top: 5em; 
+}
+
 .grey {
   color:#999999;
 }
@@ -291,6 +295,10 @@ h1, h2, h3, h5, p {
   height: 10em;
   width: auto;
 
+}
+
+.main {
+  height: auto; 
 }
 
 .menu-container:hover .stripe{

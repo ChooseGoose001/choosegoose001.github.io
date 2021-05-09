@@ -2,21 +2,17 @@
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
 <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-<title>Eye To Pencil</title>
+<title>Eye To Pencil - Studio</title>
 <link rel="shortcut icon" type="image/jpg" href="assets/images/logo-transparent-16x16-darker.png"/>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="assets/css/lightbox.css">
-
 <style>
-    @import url('assets/css/base.css');
-    @import url('assets/css/photo-grid.css');
     .main {
-        background-color: #cccc99;
+        background-color: #ffffff;
     }
     
     footer {
-        background-color: #cccc99;
+        background-color: #ffffff;
     }
 </style>
 </head>
@@ -24,11 +20,10 @@
     <header class = "header">
         <a href = "index.html"><img src="assets/images/logo-transparent.png" alt = "eye to pencil logo" /></a>
     </header>
-
     <nav class = "nav">
         <ul>
-            <div class = "menu-container"><li><a href ="index.html" id = "index">Home</a></li>
-                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet" style = "visibility: visible; margin-left: -0.5em;"/>
+            <div class = "menu-container"><li class = "link"><a href ="index.html">Home</a></li>
+                <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet"/>
             </div>
             <div class = "menu-container">
             <li><a href ="about.html">About</a></li>
@@ -40,11 +35,11 @@
             </div>
             <div class = "menu-container">
             <li><a href ="talks.html">Talks</a></li>
-            <img src="assets/images/stripe-red-transparent2.png" class = "stripe" id = "red" />
+            <img src="assets/images/stripe-red-transparent2.png" class = "stripe" id = "red"/>
             </div>
             <div class = "menu-container">
             <li><a href ="studio.html">Studio</a></li>
-            <img src="assets/images/stripe-blue-transparent.png" class = "stripe" id = "blue"/>
+            <img src="assets/images/stripe-blue-transparent.png" class = "stripe" id = "blue" style = "visibility: visible; margin-left: -0.5em;"/>
             </div>
             <div class = "menu-container">
             <li><a href ="contact.html">Contact</a></li> 
@@ -63,8 +58,8 @@
             <img src="assets/images/dots-BW.jpg" alt = "dots" class = "dots"/>
     </nav>
     <header class = "mobile-header">
-        <a href = "index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo"/></a>
-  <nav class = "mobile-menu">
+        <a href = "index.html"><img src="assets/images/logo-BW-horizontal copy.jpg" alt = "eye to pencil logo" /></a>
+    <nav class = "mobile-menu">
         <a href="#main-menu" 
         id="main-menu-toggle"
         class="menu-toggle"
@@ -98,53 +93,34 @@
         aria-hidden="true"
         hidden></a>
     </nav>
-</header>
-    <main class = "main">
-        <div class = "coursesImage">
-        <img id="randomImage"/>
-        <script>
-            function getRandomImage(){
-                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
-                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
-                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
-                            'assets/images/luci-turbans-3x1.jpg',
-                            'assets/images/evelyn-dunbar-3x1.jpg'];
-                var image = images[Math.floor(Math.random()*images.length)];
-                return image; 
-            }
-            function displayRandomImage(){
-                var htmlImage = document.getElementById("randomImage");
-                htmlImage.src = getRandomImage(); 
-            }
-            displayRandomImage(); 
-        </script>
-        </div>
-        <div class="gallery-photo-grid">
-            
-            <div class="gallery-card" style="background-image:url(assets/images/gallery/2020Europa_poppies\ copy.jpg)">
-              <a href="assets/images/gallery/2020Europa_poppies copy.jpg" data-lightbox="2020" data-title="Europa Poppies, 2020"><img src="assets/images/gallery/2020Europa_poppies copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card gallery-card-wide" style="background-color: rgb(255, 255, 255);">
-              <a href="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" data-lightbox="2020" data-title="Home Mural, 2020"><img src="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020HomeMural-portrait-birds5Mb\ copy.jpg)">
-              <a href="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" data-lightbox="2020" data-title="Home Mural, Birds, 2020"><img src="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" class="gallery-card"></a>     
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020IMG_3168-2.jpg)">
-              <a href="assets/images/gallery/2020IMG_3168-2.jpg" data-lightbox="2020" data-title="Tree Of Lives, 2020"><img src="assets/images/gallery/2020IMG_3168-2.jpg" class="gallery-card"></a>
-            </div>
-            
-           
-            
-        </div>
+    </header>
     
-        
-           
+    <main class = "main">
+        <div class = "photo-grid">
+            <div class="about-card" id="studio-card"> 
+                <img src="assets/images/AntjeLuci-studio3-w1000.jpg" id = "studio-image" alt = "studio image"/>
+            </div>
+            <div class = "card" id = "card-about">
+                <h1 class = "studio-title">The Drawing Studio</h1>
+                <p class = "studio-padding">The studio will be a space to draw together and a platform for visual exchange. It will be a space for observing and looking, discussing drawing, collaborating, sharing ideas where everyone can learn something new through drawing. Our sessions are planned to guide visually intuitive research, led through specific drawing tasks.
+                    <p class = "studio-padding">
+                    Our approach to drawing is to give everyone confidence in our ability to communicate through drawing or sketching. We believe in learning through making and that drawing is part of a visual thinking process which often entails revision. It often isn’t easy to translate visual ideas into verbal explanations, however, discussing and sharing our observations and experiences is an important part of our studio activity. This is why we feel that looking and making should be interwoven with the history of drawing. Our method of teaching derives from a twenty year conversation between an artist and an art historian where the distinctions between these disciplines have become blurred.
+                    </p>
+                    <p class = "studio-padding">
+                    We want to create a studio space that can be both, a quiet and focused place to work and also a place for lively debate. Drawing together is the catalyst for our discussions and we want to learn what the common ground and the limitations of drawing seem to be in different facets of life.
+                    </p>
+                </p>
+                
+            </div>
+            
+        </div>
+        <div class = "empty-card" style = "height: 400px;">
+
+        </div>
     </main>
-    <script src="assets/js/lightbox-plus-jquery.js"></script>
     <script src="https://kit.fontawesome.com/6864c7d28f.js" crossorigin="anonymous"></script>
 </body>
 <footer>
-  
+    
 </footer>
 </html>

@@ -6,17 +6,14 @@
 <link rel="shortcut icon" type="image/jpg" href="assets/images/logo-transparent-16x16-darker.png"/>
 <head>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="assets/css/lightbox.css">
 
 <style>
-    @import url('assets/css/base.css');
-    @import url('assets/css/photo-grid.css');
     .main {
-        background-color: #cccc99;
+        background-color: #ffffff;
     }
     
     footer {
-        background-color: #cccc99;
+        background-color: #FFFFFF;
     }
 </style>
 </head>
@@ -27,7 +24,7 @@
 
     <nav class = "nav">
         <ul>
-            <div class = "menu-container"><li><a href ="index.html" id = "index">Home</a></li>
+            <div class = "menu-container"><li class = "link"><a href ="index.html">Home</a></li>
                 <img src="assets/images/stripe-violet-transparent.png" class = "stripe" id = "violet" style = "visibility: visible; margin-left: -0.5em;"/>
             </div>
             <div class = "menu-container">
@@ -104,11 +101,17 @@
         <img id="randomImage"/>
         <script>
             function getRandomImage(){
-                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
-                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
-                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
-                            'assets/images/luci-turbans-3x1.jpg',
-                            'assets/images/evelyn-dunbar-3x1.jpg'];
+                var images = ['assets/images/3x1/luci-after-rembrandt-3x1.jpg', 
+                            'assets/images/3x1/luci-ink-drawings-cropped-01-3x1.jpg',
+                            'assets/images/3x1/luci-ink-drawings-cropped02-3x1.jpg',
+                            'assets/images/3x1/luci-turbans-3x1.jpg',
+							'assets/images/3x1/after-Rubens-3x1.jpg',
+							'assets/images/3x1/Durer-pillows-3x1.jpg',
+							'assets/images/3x1/F-Wilson-scroll1-3x1.jpg',
+							'assets/images/3x1/F-Wilson-scroll2-3x1.jpg',
+							'assets/images/3x1/floorplan-3x1.jpg',
+							'assets/images/3x1/mind-map-3x1.jpg',
+                            'assets/images/3x1/after-Artemisia-3x1.jpg'];
                 var image = images[Math.floor(Math.random()*images.length)];
                 return image; 
             }
@@ -118,30 +121,79 @@
             }
             displayRandomImage(); 
         </script>
+			<!--'assets/images/3x1/luci-after-rembrandt-3x1.jpg', 
+                            'assets/images/3x1/luci-ink-drawings-cropped-01-3x1.jpg',
+                            'assets/images/3x1/luci-ink-drawings-cropped02-3x1.jpg',
+                            'assets/images/3x1/luci-turbans-3x1.jpg',
+							'assets/images/3x1/after-Rubens-3x1.jpg',
+							'assets/images/3x1/Durer-pillows-3x1.jpg',
+							'assets/images/3x1/F-Wilson-scroll1-3x1.jpg',
+							'assets/images/3x1/F-Wilson-scroll2-3x1.jpg',
+							'assets/images/3x1/floorplan-3x1.jpg',
+							'assets/images/3x1/mind-map-3x1.jpg',
+                            'assets/images/3x1/after-Artemisia-3x1.jpg'-->
         </div>
-        <div class="gallery-photo-grid">
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                  <img src="assets/images/Antje-collage02.jpg" alt = "collage image" class="card-image1"/>
+                  <h1 style = "color:black;font-size: 2em;">Eye to Pencil</h1>
+                      <p>is a drawing project with an interdisciplinary approach, exploring how drawing is part of
+                          our thinking process and connects us to a visual world. 
+                      </p>
+                      <p>&nbsp;
+                          
+                      </p>
+                </div>
+              </div>
+
+            <div class="column">
+                <div class="card">
+                  <img src="assets/images/aims.jpg" alt = "post-it notes" class = "card-image2" />
+                  <h3><a href = "courses.html" id = "h3-links">Courses</a></h3>
+                      <p>Our inaugural courses will be starting in June '21 in the studio and we will also be running an 
+                          online version of the course. <a href="courses.html" style = "color: black;" target ="_blank">More details</a> and info on how to apply, or follow us on Instagram @<a href="https://www.instagram.com/eyetopencil/?hl=en" style ="color: black;" target="_blank">eyetopencil</a> for updates.
+                      </p>
+                      <br>
+                      
+                </div>
+            </div>
+
+            <div class="column">
+              <div class="card">
+                <img src="assets/images/Tim-Macfarlane-drawing.jpg" alt = "Tim McFarlane sketch" class="card-image" id = "index-bottom"/>
+                <h3><a href = "talks.html" id = "h3-links">Talks</a></h3>
+                    <p>We will be running a series of talks with experienced creatives across a range 
+                        of disciplines, engaging in discussions about common visual ground and where 
+                        drawing fits in. 
+                        <br>
+                        <br>
+                        <br>
+                       
+                    </p>
+              </div>
+            </div>
             
-            <div class="gallery-card" style="background-image:url(assets/images/gallery/2020Europa_poppies\ copy.jpg)">
-              <a href="assets/images/gallery/2020Europa_poppies copy.jpg" data-lightbox="2020" data-title="Europa Poppies, 2020"><img src="assets/images/gallery/2020Europa_poppies copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card gallery-card-wide" style="background-color: rgb(255, 255, 255);">
-              <a href="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" data-lightbox="2020" data-title="Home Mural, 2020"><img src="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020HomeMural-portrait-birds5Mb\ copy.jpg)">
-              <a href="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" data-lightbox="2020" data-title="Home Mural, Birds, 2020"><img src="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" class="gallery-card"></a>     
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020IMG_3168-2.jpg)">
-              <a href="assets/images/gallery/2020IMG_3168-2.jpg" data-lightbox="2020" data-title="Tree Of Lives, 2020"><img src="assets/images/gallery/2020IMG_3168-2.jpg" class="gallery-card"></a>
-            </div>
+            <div class="column">
+              <div class="card">
+                <img src="assets/images/studio2.jpg" class = "card-image3" alt = "studio" />
+                <h3><a href = "studio.html" id = "h3-links">Studio</a></h3>
+                    <p>Our drawing studio will be a space to draw together and a platform for visual 
+                        exchange. 
+                    </p>
+                    <p>
+                    It is located in the centre of Clerkenwell, London.
+                    </p>
+                    <p>&nbsp;
+                         
+                    </p>
+              </div>
+            </div> 
             
-           
-            
-        </div>
-    
+          </div>
         
            
     </main>
-    <script src="assets/js/lightbox-plus-jquery.js"></script>
     <script src="https://kit.fontawesome.com/6864c7d28f.js" crossorigin="anonymous"></script>
 </body>
 <footer>
