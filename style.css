@@ -1,9 +1,11 @@
 html {
-  font-size: 100%; /*accessibility*/
+  font-size: 16px; 
+  
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Roboto', sans-serif;
   margin: 0; 
 }
 
@@ -38,7 +40,7 @@ h1, h2, h3, h5, p {
     vertical-align: top;
     padding-left: 3rem; 
     padding-right: 1rem; 
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     padding-bottom: 0;
     margin-bottom: 0; 
       
@@ -82,7 +84,6 @@ h1, h2, h3, h5, p {
  }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: left;
     background-color: #f1f1f1;
@@ -126,6 +127,12 @@ h1, h2, h3, h5, p {
     padding-right: 2em; 
 }
 
+.card-image5 {
+  width: 20%; 
+  float: left;
+  padding-right: 2em; 
+}
+
 .card-background {
   background: #cc6633;
  
@@ -139,7 +146,6 @@ h1, h2, h3, h5, p {
   background:  #f1f1f1;
   font-size: 16px;
   color:black;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; 
   height: fit-content;
   width: fit-content;
   transition: all 500ms;
@@ -154,6 +160,7 @@ h1, h2, h3, h5, p {
   padding-right: 2em; 
   
 }
+
 
 .contactcard {
     
@@ -181,7 +188,6 @@ h1, h2, h3, h5, p {
   background:  #f1f1f1;
   font-size: 1em;
   color:black;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; 
   height: fit-content;
   width: fit-content;
   transition: all 500ms;
@@ -205,7 +211,6 @@ h1, h2, h3, h5, p {
   background:  #f1f1f1;
   font-size: 16px;
   color:black;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; 
   height: fit-content;
   width: 100%;
   transition: all 500ms;
@@ -241,6 +246,15 @@ h1, h2, h3, h5, p {
   
 }
 
+.course-titles-large {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.courses-container {
+  padding: 2em; 
+}
+
 .dates {
   font-size: 13px;
   font-weight: bold;
@@ -274,9 +288,6 @@ h1, h2, h3, h5, p {
   
 }
 
-.gallery-photo-grid {
-  padding-top: 5em; 
-}
 
 .grey {
   color:#999999;
@@ -298,7 +309,7 @@ h1, h2, h3, h5, p {
 }
 
 .main {
-  height: auto; 
+  height: 100%; 
 }
 
 .menu-container:hover .stripe{
@@ -339,7 +350,7 @@ h1, h2, h3, h5, p {
 .nav li  {
   color: rgb(174, 163, 155);
   display: inline;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   font-size: 1.5rem;
   margin-top: 2rem; 
   
@@ -380,7 +391,6 @@ h1, h2, h3, h5, p {
   flex-direction: column;
   font-size: 16px;
   color:black;
-  /* box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;  */
   height: fit-content;
   width: 80%;
   transition: all 500ms;
@@ -400,8 +410,7 @@ h1, h2, h3, h5, p {
   flex-direction: column;
   background:  #f1f1f1;
   font-size: 16px;
-  color:black;
-  box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem; 
+  color:black; 
   height: fit-content;
   width: 100%;
   transition: all 500ms;
@@ -456,7 +465,7 @@ h1, h2, h3, h5, p {
   grid-row: span 6 / auto;
   display: flex;
   flex-direction: column;
-  background:  #f1f1f1;
+  background:  #ffffff;
   font-size: 16px;
   height: fit-content;
   width: fit-content;
@@ -509,6 +518,21 @@ h1, h2, h3, h5, p {
 
   /* Responsive columns - one column layout (vertical) on small screens */
   
+  @media screen and (min-width: 488px) and (max-width: 720px ) {
+    #studio-image {
+      max-width: 225px;
+      margin-top: 1em; 
+    }
+
+    
+  }
+
+  @media screen and (min-width: 700px) and (max-width: 802px){
+    #tim-drawing {
+      max-width: 310px; 
+      margin-left: 7em; 
+    }
+  }
   
   @media screen and (max-width: 802px) { /*previously 803 */
     
@@ -527,7 +551,7 @@ h1, h2, h3, h5, p {
 
     }
 
-    .card-image4 {
+    .card-image5 {
       width: 40%; 
     }
 
@@ -662,6 +686,7 @@ h1, h2, h3, h5, p {
 
    #studio-image {
      min-width: 300px; 
+     margin-top: 1em; 
    }
 
    }
@@ -673,10 +698,12 @@ h1, h2, h3, h5, p {
 
     .card {
       max-width: 380px;
-      max-height: 370px; 
+      
       margin-left: 0em; 
       
     }
+
+    
 
 
     .card-wide {
@@ -746,13 +773,13 @@ h1, h2, h3, h5, p {
       width: 320px;  
       object-fit: contain; 
       margin-left: 2em; 
-      margin-top: 2em;
+      margin-top: 1em;
       margin-bottom: 45em; 
        
     }
   }
    
-  @media screen and (min-width: 912px) and (max-width: 1025px) {
+  @media screen and (min-width: 912px) and (max-width: 1026px) {
     .small-screens {
       display: none;
     }
@@ -760,9 +787,11 @@ h1, h2, h3, h5, p {
     .large-screens {
       display: none;
     }
+
+    
   }
 
-  @media screen and (min-width: 1001px) and (max-width: 1025px) {
+  @media screen and (min-width: 1001px) and (max-width: 1026px) {
     .about-card {
       position: relative; 
     }
@@ -1097,9 +1126,7 @@ h1, h2, h3, h5, p {
 
     
 
-    /* #index-bottom {
-      margin-bottom: 20em; 
-    } */
+   
 
     #materials-image {
       width: 650px;
@@ -1124,6 +1151,7 @@ h1, h2, h3, h5, p {
       width: 100%;
       object-fit: contain; 
       margin-bottom: 30em; 
+      margin-top: 1em; 
     }
   }
 
