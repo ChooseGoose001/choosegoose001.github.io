@@ -537,6 +537,9 @@ h1, h2, h3, h5, p {
       margin-top: 1em; 
     }
 
+    .course-container {
+      display: none; 
+    }
     
   }
 
@@ -544,6 +547,10 @@ h1, h2, h3, h5, p {
     #tim-drawing {
       max-width: 310px; 
       margin-left: 7em; 
+    }
+
+    .course-container {
+      display: none; 
     }
   }
   
@@ -574,6 +581,10 @@ h1, h2, h3, h5, p {
       margin-bottom: -1em; 
     }
 
+    .course-container {
+      display: none; 
+    }
+    
     .coursecard {
       min-width: 310px; 
       margin-left: 2em; 
@@ -746,6 +757,10 @@ h1, h2, h3, h5, p {
       padding-bottom: 40em; 
     }
     
+    .mobile-course-container {
+    display: none; 
+    }
+
     .nav {
       display: none;
     }
@@ -801,6 +816,11 @@ h1, h2, h3, h5, p {
       display: none;
     }
 
+    .mobile-course-container {
+      display: none; 
+      }
+      
+
     
   }
 
@@ -841,6 +861,11 @@ h1, h2, h3, h5, p {
     .mobile-header {
       display: none; 
     }
+
+    .mobile-course-container {
+      display: none; 
+      }
+      
 
 
     #about-image {
@@ -895,6 +920,11 @@ h1, h2, h3, h5, p {
       display: none; 
     }
 
+    .mobile-course-container {
+      display: none; 
+      }
+    
+    
     .tiny-screens {
       display: none;
     }
@@ -966,6 +996,11 @@ h1, h2, h3, h5, p {
       display: none; 
     }
 
+    .mobile-course-container {
+      display: none; 
+      }
+      
+
     .tiny-screens {
       display: none; 
     }
@@ -1020,6 +1055,11 @@ h1, h2, h3, h5, p {
     .large-screens {
       display: none;
     }
+
+    .mobile-course-container {
+      display: none; 
+      }
+      
   }
 
   @media screen and (min-width: 1600px) and (max-width: 1899px) {
@@ -1040,6 +1080,11 @@ h1, h2, h3, h5, p {
     .main {
       padding-bottom: 40em; 
     }
+
+    .mobile-course-container {
+      display: none; 
+      }
+      
 
     .tiny-screens {
       display: none; 
@@ -1115,6 +1160,11 @@ h1, h2, h3, h5, p {
     .mobile-menu {
       display: none; 
     }
+
+    .mobile-course-container {
+      display: none; 
+      }
+      
     
     .small-screens {
       display: none; 
