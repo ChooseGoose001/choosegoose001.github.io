@@ -123,6 +123,7 @@ h1, h2, h3, h5, p {
 
 .card-image4 {
     width: 25%; 
+    min-width: 135px; 
     float: left;
     padding-right: 2em; 
 }
@@ -345,7 +346,9 @@ h1, h2, h3, h5, p {
 
 .mobile-course-container {
   padding-left: 2em; 
+   
 }
+
 .mobile-icon {
   width: 20%; 
   min-width: 135px; 
@@ -541,6 +544,7 @@ h1, h2, h3, h5, p {
       display: none; 
     }
     
+    
   }
 
   @media screen and (min-width: 700px) and (max-width: 802px){
@@ -584,7 +588,7 @@ h1, h2, h3, h5, p {
     .course-container {
       display: none; 
     }
-    
+
     .coursecard {
       min-width: 310px; 
       margin-left: 2em; 
@@ -622,6 +626,10 @@ h1, h2, h3, h5, p {
     
     .large-screens {
       display: none; 
+    }
+
+    .mobile-space {
+      font-size: 1.4rem;
     }
 
     .tiny-screens{
