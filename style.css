@@ -129,6 +129,7 @@ h1, h2, h3, h5, p {
 
 .card-image5 {
   width: 20%; 
+  min-width: 135px; 
   float: left;
   padding-right: 2em; 
 }
@@ -253,7 +254,10 @@ h1, h2, h3, h5, p {
 
 .courses-container {
   padding: 2em; 
+  display: flex; 
 }
+
+
 
 .dates {
   font-size: 13px;
@@ -338,6 +342,15 @@ h1, h2, h3, h5, p {
   height: 3em;  
   padding-top: 15px; 
 }  
+
+.mobile-course-container {
+  padding-left: 2em; 
+}
+.mobile-icon {
+  width: 20%; 
+  min-width: 135px; 
+  /* padding-left: 1em;   */
+}
 
 
 .nav {
