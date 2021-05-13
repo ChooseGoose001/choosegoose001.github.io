@@ -12,11 +12,11 @@
     @import url('assets/css/base.css');
     @import url('assets/css/photo-grid.css');
     .main {
-        background-color: #cccc99;
+        background-color: #999999;
     }
     
     footer {
-        background-color: #cccc99;
+        background-color: #999999;
     }
 </style>
 </head>
@@ -99,46 +99,41 @@
         hidden></a>
     </nav>
 </header>
-    <main class = "main">
-        <div class = "coursesImage">
-        <img id="randomImage"/>
-        <script>
-            function getRandomImage(){
-                var images = ['assets/images/luci-after-rembrandt-3x1.jpg', 
-                            'assets/images/luci-ink-drawings-cropped-01-3x1.jpg',
-                            'assets/images/luci-ink-drawings-cropped02-3x1.jpg',
-                            'assets/images/luci-turbans-3x1.jpg',
-                            'assets/images/evelyn-dunbar-3x1.jpg'];
-                var image = images[Math.floor(Math.random()*images.length)];
-                return image; 
-            }
-            function displayRandomImage(){
-                var htmlImage = document.getElementById("randomImage");
-                htmlImage.src = getRandomImage(); 
-            }
-            displayRandomImage(); 
-        </script>
-        </div>
-        <div class="gallery-photo-grid">
+    <main class = "main" style = "padding-bottom: 112em;">
+		
+    <h1 style="color: white; padding-top:1.5em; margin-bottom: -1em;">STUDIO IMAGES</h1>   
+    <div class="gallery-photo-grid">
+          
+          <div class="gallery-card" style="background-image:url(assets/images/gallery/gallery-studio/01broken-window.jpg)">
+            <a href="assets/images/gallery/gallery-studio/01broken-window.jpg" data-lightbox="2020" data-title="Broken Window, 2021"><img src="assets/images/gallery/gallery-studio/01broken-window.jpg" class="gallery-card"></a>
+          </div>
+          <div class="gallery-card" style="background-image:url(assets/images/gallery/gallery-studio/03AandLinStudio.jpg)">
+            <a href="assets/images/gallery/gallery-studio/03AandLinStudio.jpg" data-lightbox="2020" data-title="Antje and Luci in the empty studio, April 2021"><img src="assets/images/gallery/gallery-studio/03AandLinStudio.jpg" class="gallery-card"></a>
+          </div>
+          <div class="gallery-card" style="background-image: url(assets/images/gallery/gallery-studio/04drawing-studio-plan.jpg)">
+            <a href="assets/images/gallery/gallery-studio/04drawing-studio-plan.jpg" data-lightbox="2020" data-title="Cardboard Box plan of the Drawing Studio, 2021"><img src="assets/images/gallery/gallery-studio/04drawing-studio-plan.jpg" class="gallery-card"></a>     
+          </div>
+          <div class="gallery-card gallery-card-wide" style="background-color: #999999;">
+            <a href="assets/images/gallery/gallery-studio/05sanding-floor.jpg" data-lightbox="2020" data-title="Sanding the Drawing Studio floor, 2021"><img src="assets/images/gallery/gallery-studio/05sanding-floor.jpg" class="gallery-card"></a>
+          </div> 
+            <div class="gallery-card" style="background-color: white; ">
+            <a href="assets/images/gallery/gallery-studio/06miro-stickies.jpg" data-lightbox="2020" data-title="Working through ideas on the Miro board, 2021"><img src="assets/images/gallery/gallery-studio/06miro-stickies.jpg" class="gallery-card"></a>
+          </div>
+          <div class="gallery-card" style="background-image: url(assets/images/gallery/gallery-studio/07Organ-cover.jpg)">
+            <a href="assets/images/gallery/gallery-studio/07Organ-cover.jpg" data-lightbox="2020" data-title="Plan to cover the Organ vent, 2021"><img src="assets/images/gallery/gallery-studio/07Organ-cover.jpg" class="gallery-card"></a>
+          </div>
+          <div class="gallery-card gallery-card-wide" style="background-color: white">
+            <a href="assets/images/gallery/gallery-studio/08AandL-talking.jpg" data-lightbox="2020" data-title="Antje and Luci talking in the Drawing Studio, 2021"><img src="assets/images/gallery/gallery-studio/08AandL-talking.jpg" class="gallery-card"></a>     
+          </div>
+          <div class="gallery-card gallery-card-wide" style="background-color: white">
+            <a href="assets/images/gallery/gallery-studio/09AandLExmouthMark.jpg" data-lightbox="2020" data-title="Antje and Luci talking in the Drawing Studio, 2021"><img src="assets/images/gallery/gallery-studio/09AandLExmouthMark.jpg" class="gallery-card"></a>     
+          </div>
+          <div class="gallery-card" style="background-image: url(assets/images/gallery/gallery-studio/10Drawing-boards-plan.jpg)">
+            <a href="assets/images/gallery/gallery-studio/10Drawing-boards-plan.jpg" data-lightbox="2020" data-title="Plan for chopping up the plywood for drawing boards, 2021"><img src="assets/images/gallery/gallery-studio/10Drawing-boards-plan.jpg" class="gallery-card"></a>
+          </div>
             
-            <div class="gallery-card" style="background-image:url(assets/images/gallery/2020Europa_poppies\ copy.jpg)">
-              <a href="assets/images/gallery/2020Europa_poppies copy.jpg" data-lightbox="2020" data-title="Europa Poppies, 2020"><img src="assets/images/gallery/2020Europa_poppies copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card gallery-card-wide" style="background-color: rgb(255, 255, 255);">
-              <a href="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" data-lightbox="2020" data-title="Home Mural, 2020"><img src="assets/images/gallery/2020HomeMural-landscape5MB copy.jpg" class="gallery-card"></a>
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020HomeMural-portrait-birds5Mb\ copy.jpg)">
-              <a href="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" data-lightbox="2020" data-title="Home Mural, Birds, 2020"><img src="assets/images/gallery/2020HomeMural-portrait-birds5Mb copy.jpg" class="gallery-card"></a>     
-            </div>
-            <div class="gallery-card" style="background-image: url(assets/images/gallery/2020IMG_3168-2.jpg)">
-              <a href="assets/images/gallery/2020IMG_3168-2.jpg" data-lightbox="2020" data-title="Tree Of Lives, 2020"><img src="assets/images/gallery/2020IMG_3168-2.jpg" class="gallery-card"></a>
-            </div>
-            
-           
-            
-        </div>
-    
-        
+      </div>
+      
            
     </main>
     <script src="assets/js/lightbox-plus-jquery.js"></script>

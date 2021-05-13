@@ -83,6 +83,15 @@ h1, h2, h3, h5, p {
     
  }
 
+.arrow {
+  float: left;
+  width: 20%;  
+  padding-right: 2em; 
+}
+
+
+
+
 .card {
     padding: 16px;
     text-align: left;
@@ -134,6 +143,8 @@ h1, h2, h3, h5, p {
   float: left;
   padding-right: 2em; 
 }
+
+
 
 .card-background {
   background: #cc6633;
@@ -458,6 +469,7 @@ h1, h2, h3, h5, p {
   padding-left: 8em;
 }
 
+
 #calendar-link {
   padding: 1em; 
 }
@@ -544,6 +556,9 @@ h1, h2, h3, h5, p {
       display: none; 
     }
     
+    .arrow-container {
+      display: none; 
+    }
     
   }
 
@@ -556,9 +571,13 @@ h1, h2, h3, h5, p {
     .course-container {
       display: none; 
     }
+
+    .arrow-container {
+      display: none; 
+    }
   }
   
-  @media screen and (max-width: 802px) { /*previously 803 */
+  @media screen and (max-width: 802px) { 
     
 
     html,body /*fixes extra white margin and horizontal scroll on phones */
@@ -568,6 +587,19 @@ h1, h2, h3, h5, p {
         margin: 0px;
         padding: 0px;
         overflow-x: hidden; 
+    }
+
+    .arrow-container {
+      display: none; 
+    }
+
+    .mobile-arrow-container img{
+      width: 25%; 
+      padding-top: 1em; 
+    }
+
+    .mobile-arrow-container a{
+      font-size: 80%; 
     }
 
     .card-wide {
@@ -665,6 +697,7 @@ h1, h2, h3, h5, p {
       
     }
 
+
     #basics-left {
       display: none; 
     }
@@ -728,6 +761,19 @@ h1, h2, h3, h5, p {
       min-width: 350px;
     }
 
+    .arrow-container {
+      display: none; 
+    }
+
+    .mobile-arrow-container img{
+      width: 25%; 
+      padding-top: 1em; 
+    }
+
+    .mobile-arrow-container a{
+      font-size: 80%; 
+    }
+
     .card {
       max-width: 380px;
       
@@ -768,6 +814,7 @@ h1, h2, h3, h5, p {
     .mobile-course-container {
     display: none; 
     }
+
 
     .nav {
       display: none;
@@ -874,6 +921,9 @@ h1, h2, h3, h5, p {
       display: none; 
       }
       
+     .mobile-arrow-container {
+        display: none; 
+        }
 
 
     #about-image {
@@ -931,7 +981,10 @@ h1, h2, h3, h5, p {
     .mobile-course-container {
       display: none; 
       }
-    
+
+    .mobile-arrow-container {
+        display: none; 
+      }
     
     .tiny-screens {
       display: none;
@@ -1007,7 +1060,10 @@ h1, h2, h3, h5, p {
     .mobile-course-container {
       display: none; 
       }
-      
+    
+     .mobile-arrow-container {
+            display: none; 
+          }
 
     .tiny-screens {
       display: none; 
@@ -1067,6 +1123,10 @@ h1, h2, h3, h5, p {
     .mobile-course-container {
       display: none; 
       }
+    
+    .mobile-arrow-container {
+        display: none; 
+      }
       
   }
 
@@ -1092,7 +1152,11 @@ h1, h2, h3, h5, p {
     .mobile-course-container {
       display: none; 
       }
-      
+    
+    .mobile-arrow-container {
+        display: none; 
+      }
+  
 
     .tiny-screens {
       display: none; 
@@ -1171,6 +1235,10 @@ h1, h2, h3, h5, p {
 
     .mobile-course-container {
       display: none; 
+      }
+
+   .mobile-arrow-container {
+        display: none; 
       }
       
     
