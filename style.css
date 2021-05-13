@@ -879,6 +879,13 @@ h1, h2, h3, h5, p {
     
   }
 
+  @media screen and (min-width: 1001px) and (max-width: 1183px) {
+    .card-wide {
+      margin-left: 6em; 
+      margin-right: -3em; 
+    }
+  }
+
   @media screen and (min-width: 1001px) and (max-width: 1026px) {
     .about-card {
       position: relative; 
