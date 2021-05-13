@@ -296,6 +296,7 @@ h1, h2, h3, h5, p {
 .fa-instagram {
   vertical-align: text-bottom;
   width: 2em; 
+  color: gray; 
 }
 
 .flex-container {
