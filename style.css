@@ -390,8 +390,6 @@ h1, h2, h3, h5, p {
   color:rgb(174, 163, 155);
 }
 
-
-
 .page-size {
   height: 1200px; 
 }
@@ -479,6 +477,12 @@ h1, h2, h3, h5, p {
     margin-top: 3em; 
     margin-right: 2em; 
     margin-bottom: 2em; 
+}
+
+#gallery-title{
+  color: white; 
+  padding-top: 1em; 
+  margin-bottom: -1.5em; 
 }
 
 #luci-image {
@@ -594,6 +598,10 @@ h1, h2, h3, h5, p {
       display: none; 
     }
 
+    .card-image2 {
+      width: 58%; 
+    }
+
     .mobile-arrow-container img{
       width: 25%; 
       padding-top: 1em; 
@@ -660,6 +668,7 @@ h1, h2, h3, h5, p {
     .large-screens {
       display: none; 
     }
+    
 
     .mobile-space {
       font-size: 1.4rem;
@@ -846,6 +855,8 @@ h1, h2, h3, h5, p {
      display: none; 
    }
 
+  
+
     #materials-image {
       width: 320px;
       object-fit: contain;
@@ -876,6 +887,7 @@ h1, h2, h3, h5, p {
       display: none; 
       }
       
+    
 
     
   }
@@ -884,6 +896,15 @@ h1, h2, h3, h5, p {
     .card-wide {
       margin-left: 6em; 
       margin-right: -3em; 
+    }
+
+    .menu-container{
+      margin-inline: 0.3em; 
+    }
+
+    #desktop-logo {
+       height: 6.5em;
+       margin-top: 3em;  
     }
   }
 
