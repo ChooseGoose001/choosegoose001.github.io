@@ -600,6 +600,7 @@ h1, h2, h3, h5, p {
 
     .card-image2 {
       width: 58%; 
+      padding-bottom: 0.5em; 
     }
 
     .mobile-arrow-container img{
