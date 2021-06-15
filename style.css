@@ -119,7 +119,7 @@ h1, h2, h3, h5, p {
 }
 
 .card-image2 {
-    width: 64%;
+    width: 60%; /*previously 64% */
     float: left;
     padding-right: 2em; 
 }
